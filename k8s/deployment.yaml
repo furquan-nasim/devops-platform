@@ -17,12 +17,12 @@ spec:
     spec:
       containers:
       - name: devops-platform
-        image: furquan02/devops-platform:latest
+        image: furquan02/devops-platform:3
         ports:
         - containerPort: 5000
         env:
         - name: APP_VERSION
-          value: "1.0.0"
+          value: "2.0.0"
         livenessProbe:
           httpGet:
             path: /health
